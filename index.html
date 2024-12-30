@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Overview</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Course Overview</h1>
+        <div class="filter-buttons">
+            <button onclick="filterCourses('all')">All Courses</button>
+            <button onclick="filterCourses('enrolled')">Enrolled Courses</button>
+            <button onclick="filterCourses('completed')">Completed Courses</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="course-tile" data-status="enrolled">
+            <img src="C:\Users\Iqra2\OneDrive\Desktop\new\Full-Stack-Springboard-master\frontend\images\course.jpg" alt="Course Image 1" class="course-image">
+            <div class="course-details">
+                <h3 class="course-title">Course 1 Title</h3>
+                <p class="course-instructor">Instructor: John Doe</p>
+                <p class="course-date">Creation Date: 01/01/2024</p>
+                <p class="course-duration">Duration: 4 Weeks</p>
+                <p class="enrollment-status">Status: Enrolled</p>
+                <button class="enroll-button" onclick="enrollCourse(this)">View Course</button>
+            </div>
+        </div>
+
+        <div class="course-tile" data-status="not-enrolled">
+            <img src="C:\Users\Iqra2\OneDrive\Desktop\new\Full-Stack-Springboard-master\frontend\images\course.jpg" alt="Course Image 2" class="course-image">
+            <div class="course-details">
+                <h3 class="course-title">Course 2 Title</h3>
+                <p class="course-instructor">Instructor: Jane Smith</p>
+                <p class="course-date">Creation Date: 15/02/2024</p>
+                <p class="course-duration">Duration: 6 Weeks</p>
+                <p class="enrollment-status">Status: Not Enrolled</p>
+                <button class="enroll-button" onclick="enrollCourse(this)">Enroll</button>
+            </div>
+        </div>
+
+        <div class="course-tile" data-status="completed">
+            <img src="C:\Users\Iqra2\OneDrive\Desktop\new\Full-Stack-Springboard-master\frontend\images\course.jpg" alt="Course Image 3" class="course-image">
+            <div class="course-details">
+                <h3 class="course-title">Course 3 Title</h3>
+                <p class="course-instructor">Instructor: Sarah Lee</p>
+                <p class="course-date">Creation Date: 25/03/2024</p>
+                <p class="course-duration">Duration: 8 Weeks</p>
+                <p class="enrollment-status">Status: Completed</p>
+                <button class="enroll-button" disabled>Completed</button>
+            </div>
+        </div>
+        <div class="course-tile" data-status="not-enrolled">
+          <img src="C:\Users\Iqra2\OneDrive\Desktop\new\Full-Stack-Springboard-master\frontend\images\course.jpg" alt="Course Image 1" class="course-image">
+          <div class="course-details">
+              <h3 class="course-title">Course 4 Title</h3>
+              <p class="course-instructor">Instructor: John Doe</p>
+              <p class="course-date">Creation Date: 01/01/2024</p>
+              <p class="course-duration">Duration: 4 Weeks</p>
+              <p class="enrollment-status">Status: Not Enrolled</p>
+              <button class="enroll-button" onclick="enrollCourse(this)">Enroll</button>
+          </div>
+          <div class="course-tile" data-status="not-enrolled">
+            <img src="C:\Users\Iqra2\OneDrive\Desktop\new\Full-Stack-Springboard-master\frontend\images\course.jpg" alt="Course Image 1" class="course-image">
+            <div class="course-details">
+                <h3 class="course-title">Course 5 Title</h3>
+                <p class="course-instructor">Instructor: John Doe</p>
+                <p class="course-date">Creation Date: 01/01/2024</p>
+                <p class="course-duration">Duration: 4 Weeks</p>
+                <p class="enrollment-status">Status: Not Enrolled</p>
+                <button class="enroll-button" onclick="enrollCourse(this)">Enroll</button>
+            </div>
+    </div>
+
+        <!-- Add more courses as needed -->
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
